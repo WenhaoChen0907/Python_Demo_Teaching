@@ -1,0 +1,982 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>面向对象封装案例II | 基础课程概述</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../file/8/06_私有属性和私有方法.html" />
+    
+    
+    <link rel="prev" href="../../file/8/04_面向对象封装案例.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="7.5"
+        data-chapter-title="面向对象封装案例II"
+        data-filepath="file/8/05_面向对象封装案例II.md"
+        data-basepath="../.."
+        data-revision="Sun Sep 09 2018 19:35:40 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Python基础课件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="file/1/index.html">
+            
+                
+                    <a href="../../file/1/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Python基础知识
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="file/2/01_认识Python.html">
+            
+                
+                    <a href="../../file/2/01_认识Python.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        认识python(了解)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="file/1/02_第一个Python程序.html">
+            
+                
+                    <a href="../../file/1/02_第一个Python程序.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        第一个python程序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="file/2/03_PyCharm的初始设置-了解.html">
+            
+                
+                    <a href="../../file/2/03_PyCharm的初始设置-了解.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        使用pycharm
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="file/2/04_多文件项目的演练.html">
+            
+                
+                    <a href="../../file/2/04_多文件项目的演练.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        多文件项目演练
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="file/2/index.html">
+            
+                
+                    <a href="../../file/2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        程序的基本内容
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="file/2/05_注释.html">
+            
+                
+                    <a href="../../file/2/05_注释.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        注释
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="file/2/06_算数运算符.html">
+            
+                
+                    <a href="../../file/2/06_算数运算符.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        算数运算符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="file/2/07_程序执行原理-科普.html">
+            
+                
+                    <a href="../../file/2/07_程序执行原理-科普.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        程序执行原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="file/2/08_变量的基本使用.html">
+            
+                
+                    <a href="../../file/2/08_变量的基本使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        变量的基本使用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="file/3/index.html">
+            
+                
+                    <a href="../../file/3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        基本控制结构
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="file/3/09_变量的命名.html">
+            
+                
+                    <a href="../../file/3/09_变量的命名.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        变量的命名
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="file/3/10_判断if语句.html">
+            
+                
+                    <a href="../../file/3/10_判断if语句.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        判断if语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="file/3/11_运算符.html">
+            
+                
+                    <a href="../../file/3/11_运算符.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        运算符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="file/3/12_循环.html">
+            
+                
+                    <a href="../../file/3/12_循环.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        循环
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="file/4/index.html">
+            
+                
+                    <a href="../../file/4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        函数(一)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="file/4/函数基础.html">
+            
+                
+                    <a href="../../file/4/函数基础.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        函数介绍
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="file/5/README-2.html">
+            
+                
+                    <a href="../../file/5/README-2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        高级变量
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="file/5/高级变量类型.html">
+            
+                
+                    <a href="../../file/5/高级变量类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        高级变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="file/6/高级变量类型.html">
+            
+                
+                    <a href="../../file/6/高级变量类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        高级变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="file/6/综合应用——名片管理系统.html">
+            
+                
+                    <a href="../../file/6/综合应用——名片管理系统.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        名片管理系统
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="file/7/0.html">
+            
+                
+                    <a href="../../file/7/0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        变量及函数高级
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="file/7/变量进阶.html">
+            
+                
+                    <a href="../../file/7/变量进阶.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        变量进阶
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="file/7/函数进阶.html">
+            
+                
+                    <a href="../../file/7/函数进阶.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        函数进阶
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="file/8/index.html">
+            
+                
+                    <a href="../../file/8/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        面向对象基础(一)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="file/8/01_面向对象OOP基本概念.html">
+            
+                
+                    <a href="../../file/8/01_面向对象OOP基本概念.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        面向对象编程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="file/8/02_类和对象.html">
+            
+                
+                    <a href="../../file/8/02_类和对象.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        类和对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="file/8/03_面相对象基础语法.html">
+            
+                
+                    <a href="../../file/8/03_面相对象基础语法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        面向对象基础语法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="file/8/04_面向对象封装案例.html">
+            
+                
+                    <a href="../../file/8/04_面向对象封装案例.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        面向对象封装案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.5" data-path="file/8/05_面向对象封装案例II.html">
+            
+                
+                    <a href="../../file/8/05_面向对象封装案例II.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        面向对象封装案例II
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="file/8/06_私有属性和私有方法.html">
+            
+                
+                    <a href="../../file/8/06_私有属性和私有方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        私有属性和私有方法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="file/9/index.html">
+            
+                
+                    <a href="../../file/9/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        面向对象基础(二)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="file/9/继承.html">
+            
+                
+                    <a href="../../file/9/继承.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        继承
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="file/9/多态.html">
+            
+                
+                    <a href="../../file/9/多态.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        多态
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="file/9/类属性和类方法.html">
+            
+                
+                    <a href="../../file/9/类属性和类方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        类属性和类方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="file/9/单例.html">
+            
+                
+                    <a href="../../file/9/单例.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        单例
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="file/10/index.html">
+            
+                
+                    <a href="../../file/10/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        异常、模块(了解)及其他
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="file/10/异常.html">
+            
+                
+                    <a href="../../file/10/异常.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        异常
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="file/10/模块和包.html">
+            
+                
+                    <a href="../../file/10/模块和包.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        模块和包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="file/10/文件.html">
+            
+                
+                    <a href="../../file/10/文件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="file/10/eval函数.html">
+            
+                
+                    <a href="../../file/10/eval函数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        eval函数
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >基础课程概述</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x5C01;&#x88C5;&#x6848;&#x4F8B;-ii">&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x5C01;&#x88C5;&#x6848;&#x4F8B; II</h1>
+<h2 id="&#x76EE;&#x6807;">&#x76EE;&#x6807;</h2>
+<ul>
+<li>&#x58EB;&#x5175;&#x7A81;&#x51FB;&#x6848;&#x4F8B;</li>
+<li>&#x8EAB;&#x4EFD;&#x8FD0;&#x7B97;&#x7B26;</li>
+</ul>
+<p><strong>&#x5C01;&#x88C5;</strong></p>
+<ol>
+<li><strong>&#x5C01;&#x88C5;</strong> &#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7684;&#x4E00;&#x5927;&#x7279;&#x70B9;</li>
+<li>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7684; <strong>&#x7B2C;&#x4E00;&#x6B65;</strong> &#x2014;&#x2014; &#x5C06; <strong>&#x5C5E;&#x6027;</strong> &#x548C; <strong>&#x65B9;&#x6CD5;</strong> <strong>&#x5C01;&#x88C5;</strong> &#x5230;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7684; <strong>&#x7C7B;</strong> &#x4E2D;</li>
+<li><strong>&#x5916;&#x754C;</strong> &#x4F7F;&#x7528; <strong>&#x7C7B;</strong> &#x521B;&#x5EFA; <strong>&#x5BF9;&#x8C61;</strong>&#xFF0C;&#x7136;&#x540E; <strong>&#x8BA9;&#x5BF9;&#x8C61;&#x8C03;&#x7528;&#x65B9;&#x6CD5;</strong></li>
+<li><strong>&#x5BF9;&#x8C61;&#x65B9;&#x6CD5;&#x7684;&#x7EC6;&#x8282;</strong> &#x90FD;&#x88AB; <strong>&#x5C01;&#x88C5;</strong> &#x5728; <strong>&#x7C7B;&#x7684;&#x5185;&#x90E8;</strong></li>
+</ol>
+<blockquote>
+<p>&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684; <strong>&#x5C5E;&#x6027;</strong> &#x53EF;&#x4EE5;&#x662F; <strong>&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x7C7B;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;</strong></p>
+</blockquote>
+<h2 id="01-&#x58EB;&#x5175;&#x7A81;&#x51FB;">01. &#x58EB;&#x5175;&#x7A81;&#x51FB;</h2>
+<p><strong>&#x9700;&#x6C42;</strong></p>
+<ol>
+<li><strong>&#x58EB;&#x5175;</strong> <strong>&#x8BB8;&#x4E09;&#x591A;</strong> &#x6709;&#x4E00;&#x628A; <strong>AK47</strong></li>
+<li><strong>&#x58EB;&#x5175;</strong> &#x53EF;&#x4EE5; <strong>&#x5F00;&#x706B;</strong></li>
+<li><strong>&#x67AA;</strong> &#x80FD;&#x591F; <strong>&#x53D1;&#x5C04;</strong> &#x5B50;&#x5F39;</li>
+<li><strong>&#x67AA;</strong> &#x88C5;&#x586B; <strong>&#x88C5;&#x586B;&#x5B50;&#x5F39;</strong> &#x2014;&#x2014; <strong>&#x589E;&#x52A0;&#x5B50;&#x5F39;&#x6570;&#x91CF;</strong></li>
+</ol>
+<p><img src="media/15006304901683/009_%E5%A3%AB%E5%85%B5%E7%AA%81%E5%87%BB.png" alt="009_&#x58EB;&#x5175;&#x7A81;&#x51FB;-w610"></p>
+<h3 id="11-&#x5F00;&#x53D1;&#x67AA;&#x7C7B;">1.1 &#x5F00;&#x53D1;&#x67AA;&#x7C7B;</h3>
+<p><strong><code>shoot</code> &#x65B9;&#x6CD5;&#x9700;&#x6C42;</strong></p>
+<ul>
+<li>1&gt; &#x5224;&#x65AD;&#x662F;&#x5426;&#x6709;&#x5B50;&#x5F39;&#xFF0C;&#x6CA1;&#x6709;&#x5B50;&#x5F39;&#x65E0;&#x6CD5;&#x5C04;&#x51FB;</li>
+<li>2&gt; &#x4F7F;&#x7528; <code>print</code> &#x63D0;&#x793A;&#x5C04;&#x51FB;&#xFF0C;&#x5E76;&#x4E14;&#x8F93;&#x51FA;&#x5B50;&#x5F39;&#x6570;&#x91CF;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Gun</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, model)</span>:</span>
+
+        <span class="hljs-comment"># &#x67AA;&#x7684;&#x578B;&#x53F7;</span>
+        self.model = model
+        <span class="hljs-comment"># &#x5B50;&#x5F39;&#x6570;&#x91CF;</span>
+        self.bullet_count = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bullet</span><span class="hljs-params">(self, count)</span>:</span>
+
+        self.bullet_count += count
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">shoot</span><span class="hljs-params">(self)</span>:</span>
+
+        <span class="hljs-comment"># &#x5224;&#x65AD;&#x662F;&#x5426;&#x8FD8;&#x6709;&#x5B50;&#x5F39;</span>
+        <span class="hljs-keyword">if</span> self.bullet_count &lt;= <span class="hljs-number">0</span>:
+            print(<span class="hljs-string">&quot;&#x6CA1;&#x6709;&#x5B50;&#x5F39;&#x4E86;...&quot;</span>)
+
+            <span class="hljs-keyword">return</span>
+
+        <span class="hljs-comment"># &#x53D1;&#x5C04;&#x4E00;&#x9897;&#x5B50;&#x5F39;</span>
+        self.bullet_count -= <span class="hljs-number">1</span>
+
+        print(<span class="hljs-string">&quot;%s &#x53D1;&#x5C04;&#x5B50;&#x5F39;[%d]...&quot;</span> % (self.model, self.bullet_count))
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x67AA;&#x5BF9;&#x8C61;</span>
+ak47 = Gun(<span class="hljs-string">&quot;ak47&quot;</span>)
+ak47.add_bullet(<span class="hljs-number">50</span>)
+ak47.shoot()
+</code></pre>
+<h3 id="12-&#x5F00;&#x53D1;&#x58EB;&#x5175;&#x7C7B;">1.2 &#x5F00;&#x53D1;&#x58EB;&#x5175;&#x7C7B;</h3>
+<blockquote>
+<p>&#x5047;&#x8BBE;&#xFF1A;&#x6BCF;&#x4E00;&#x4E2A;&#x65B0;&#x5175; &#x90FD; <strong>&#x6CA1;&#x6709;&#x67AA;</strong></p>
+</blockquote>
+<p><strong>&#x5B9A;&#x4E49;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x503C;&#x7684;&#x5C5E;&#x6027;</strong></p>
+<p>&#x5728;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x5982;&#x679C; <strong>&#x4E0D;&#x77E5;&#x9053;&#x8BBE;&#x7F6E;&#x4EC0;&#x4E48;&#x521D;&#x59CB;&#x503C;</strong>&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E3A; <code>None</code></p>
+<ul>
+<li><code>None</code> <strong>&#x5173;&#x952E;&#x5B57;</strong> &#x8868;&#x793A; <strong>&#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;</strong></li>
+<li>&#x8868;&#x793A;&#x4E00;&#x4E2A; <strong>&#x7A7A;&#x5BF9;&#x8C61;</strong>&#xFF0C;<strong>&#x6CA1;&#x6709;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x5E38;&#x91CF;</strong></li>
+<li>&#x53EF;&#x4EE5;&#x5C06; <code>None</code> &#x8D4B;&#x503C;&#x7ED9;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;</li>
+</ul>
+<p><strong><code>fire</code> &#x65B9;&#x6CD5;&#x9700;&#x6C42;</strong></p>
+<ul>
+<li>1&gt; &#x5224;&#x65AD;&#x662F;&#x5426;&#x6709;&#x67AA;&#xFF0C;&#x6CA1;&#x6709;&#x67AA;&#x6CA1;&#x6CD5;&#x51B2;&#x950B;</li>
+<li>2&gt; &#x558A;&#x4E00;&#x58F0;&#x53E3;&#x53F7;</li>
+<li>3&gt; &#x88C5;&#x586B;&#x5B50;&#x5F39;</li>
+<li>4&gt; &#x5C04;&#x51FB;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Soldier</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+
+        <span class="hljs-comment"># &#x59D3;&#x540D;</span>
+        self.name = name
+        <span class="hljs-comment"># &#x67AA;&#xFF0C;&#x58EB;&#x5175;&#x521D;&#x59CB;&#x6CA1;&#x6709;&#x67AA; None &#x5173;&#x952E;&#x5B57;&#x8868;&#x793A;&#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;</span>
+        self.gun = <span class="hljs-keyword">None</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fire</span><span class="hljs-params">(self)</span>:</span>
+
+        <span class="hljs-comment"># 1. &#x5224;&#x65AD;&#x58EB;&#x5175;&#x662F;&#x5426;&#x6709;&#x67AA;</span>
+        <span class="hljs-keyword">if</span> self.gun <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span>:
+            print(<span class="hljs-string">&quot;[%s] &#x8FD8;&#x6CA1;&#x6709;&#x67AA;...&quot;</span> % self.name)
+
+            <span class="hljs-keyword">return</span>
+
+        <span class="hljs-comment"># 2. &#x9AD8;&#x558A;&#x53E3;&#x53F7;</span>
+        print(<span class="hljs-string">&quot;&#x51B2;&#x554A;...[%s]&quot;</span> % self.name)
+
+        <span class="hljs-comment"># 3. &#x8BA9;&#x67AA;&#x88C5;&#x586B;&#x5B50;&#x5F39;</span>
+        self.gun.add_bullet(<span class="hljs-number">50</span>)
+
+        <span class="hljs-comment"># 4. &#x8BA9;&#x67AA;&#x53D1;&#x5C04;&#x5B50;&#x5F39;</span>
+        self.gun.shoot()
+</code></pre>
+<p><strong>&#x5C0F;&#x7ED3;</strong></p>
+<ol>
+<li>&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; <strong>&#x58EB;&#x5175;&#x7C7B;</strong>&#xFF0C;&#x4F7F;&#x7528;&#x5230; <code>__init__</code> &#x5185;&#x7F6E;&#x65B9;&#x6CD5;</li>
+<li>&#x5728;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x5982;&#x679C; <strong>&#x4E0D;&#x77E5;&#x9053;&#x8BBE;&#x7F6E;&#x4EC0;&#x4E48;&#x521D;&#x59CB;&#x503C;</strong>&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E3A; <code>None</code></li>
+<li>&#x5728; <strong>&#x5C01;&#x88C5;&#x7684;</strong> &#x65B9;&#x6CD5;&#x5185;&#x90E8;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x8BA9; <strong>&#x81EA;&#x5DF1;&#x7684;</strong> <strong>&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x7C7B;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;</strong> &#x8C03;&#x7528;&#x5DF2;&#x7ECF; <strong>&#x5C01;&#x88C5;&#x597D;&#x7684;&#x65B9;&#x6CD5;</strong> </li>
+</ol>
+<h2 id="02-&#x8EAB;&#x4EFD;&#x8FD0;&#x7B97;&#x7B26;">02. &#x8EAB;&#x4EFD;&#x8FD0;&#x7B97;&#x7B26;</h2>
+<p>&#x8EAB;&#x4EFD;&#x8FD0;&#x7B97;&#x7B26;&#x7528;&#x4E8E; <strong>&#x6BD4;&#x8F83;</strong> &#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x7684; <strong>&#x5185;&#x5B58;&#x5730;&#x5740;</strong> &#x662F;&#x5426;&#x4E00;&#x81F4; &#x2014;&#x2014; <strong>&#x662F;&#x5426;&#x662F;&#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;</strong></p>
+<ul>
+<li>&#x5728; <code>Python</code> &#x4E2D;&#x9488;&#x5BF9; <code>None</code> &#x6BD4;&#x8F83;&#x65F6;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; <code>is</code> &#x5224;&#x65AD;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x7B97;&#x7B26;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x5B9E;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>is</td>
+<td>is &#x662F;&#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#x662F;&#x4E0D;&#x662F;&#x5F15;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</td>
+<td>x is y&#xFF0C;&#x7C7B;&#x4F3C; id(x) == id(y)</td>
+</tr>
+<tr>
+<td>is not</td>
+<td>is not &#x662F;&#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#x662F;&#x4E0D;&#x662F;&#x5F15;&#x7528;&#x4E0D;&#x540C;&#x5BF9;&#x8C61;</td>
+<td>x is not y&#xFF0C;&#x7C7B;&#x4F3C; id(a) != id(b)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="is-&#x4E0E;--&#x533A;&#x522B;&#xFF1A;">is &#x4E0E; == &#x533A;&#x522B;&#xFF1A;</h3>
+<p><code>is</code> &#x7528;&#x4E8E;&#x5224;&#x65AD; <strong>&#x4E24;&#x4E2A;&#x53D8;&#x91CF; &#x5F15;&#x7528;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x4E3A;&#x540C;&#x4E00;&#x4E2A;</strong> 
+<code>==</code> &#x7528;&#x4E8E;&#x5224;&#x65AD; <strong>&#x5F15;&#x7528;&#x53D8;&#x91CF;&#x7684;&#x503C;</strong> &#x662F;&#x5426;&#x76F8;&#x7B49;</p>
+<pre><code class="lang-python"><span class="hljs-prompt">&gt;&gt;&gt; </span>a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-prompt">&gt;&gt;&gt; </span>b = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-prompt">&gt;&gt;&gt; </span>b <span class="hljs-keyword">is</span> a 
+<span class="hljs-keyword">False</span>
+<span class="hljs-prompt">&gt;&gt;&gt; </span>b == a
+<span class="hljs-keyword">True</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../file/8/04_面向对象封装案例.html" class="navigation navigation-prev " aria-label="Previous page: 面向对象封装案例"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../file/8/06_私有属性和私有方法.html" class="navigation navigation-next " aria-label="Next page: 私有属性和私有方法"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
